@@ -1,0 +1,44 @@
+﻿@using PC.Models;
+@model List<MemberModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Members</h2>
+<div>
+    <a href="/Member/Index">Add Member</a> 
+</div>
+<table>
+    <thead>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+            <td>Premium</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (MemberModel member in Model)
+        {
+        <tr>
+            <td>
+                @member.FirstName
+            </td>
+            <td>
+                @member.LastName
+            </td>
+            <td>
+                @member.Age
+            </td>
+            <td>
+                @member.Gender
+            </td>
+            <td>
+                @member.Premium
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+

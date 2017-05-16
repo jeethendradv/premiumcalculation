@@ -1,0 +1,53 @@
+﻿@using PC.Objects;
+@model PremiumRuleConfig
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add Member</h2>
+<form method="post" action="/Member/Add">
+    <div class="row">
+        <div class="col-md-4">First Name:</div>
+        <div class="col-md-6"><input type="text" name="FirstName"/></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">Last Name:</div>
+        <div class="col-md-6"><input type="text" name="LastName" /></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">Age:</div>
+        <div class="col-md-6"><input type="text" name="Age" /></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">Gender:</div>
+        <div class="col-md-6">
+            <select name="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">Do you have any pre-conditions?</div>
+        <div class="col-md-6">
+            @foreach (PC.Objects.RuleConfigs.PreconditionConfig precondition in Model.PreconditionsRule)
+            {
+            <input type="checkbox" name="PreConditions" value="@precondition.Precondition" /> @precondition.Precondition <br />
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">Do you have any of below habbits?</div>
+        <div class="col-md-6">
+            @foreach (PC.Objects.RuleConfigs.HabitConfig habit in Model.HabitsRule)
+            {
+                <input type="checkbox" name="Habits" value="@habit.Habit" /> @habit.Habit <br />
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6"><input type="submit" value="Add"/></div>
+    </div>
+</form>
+

@@ -1,0 +1,10 @@
+D:\Interview\PC\PC.Objects\bin\Debug\PC.Objects.dll
+D:\Interview\PC\PC.Objects\bin\Debug\PC.Objects.pdb
+D:\Interview\PC\PC.Objects\obj\Debug\PC.Objects.dll
+D:\Interview\PC\PC.Objects\obj\Debug\PC.Objects.pdb
+D:\Interview\PC\PC.Objects\obj\Debug\PC.Objects.csprojResolveAssemblyReference.cache
+D:\Data\Github\PC\PC.Objects\bin\Debug\PC.Objects.dll
+D:\Data\Github\PC\PC.Objects\bin\Debug\PC.Objects.pdb
+D:\Data\Github\PC\PC.Objects\obj\Debug\PC.Objects.csprojResolveAssemblyReference.cache
+D:\Data\Github\PC\PC.Objects\obj\Debug\PC.Objects.dll
+D:\Data\Github\PC\PC.Objects\obj\Debug\PC.Objects.pdb

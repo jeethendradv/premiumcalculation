@@ -1,0 +1,74 @@
+{
+  "BasePremiumRule": [
+    {
+      "MinAge": 0,
+      "MaxAge": 100,
+      "Premium": 5000
+    }
+  ],
+  "AgeRule": [
+    {
+      "Min": 18,
+      "Max": 25,
+      "Percent": 20
+    },
+    {
+      "Min": 25,
+      "Max": 30,
+      "Percent": 10
+    },
+    {
+      "Min": 30,
+      "Max": 35,
+      "Percent": 10
+    },
+    {
+      "Min": 35,
+      "Max": 40,
+      "Percent": 10
+    },
+    {
+      "Min": 40,
+      "Max": 0,
+      "Percent": 10
+    }
+  ],
+  "GenderRule": [
+    {
+      "Gender": "Male",
+      "Percent": 2
+    },
+    {
+      "Gender": "Female",
+      "Percent": 0
+    },
+    {
+      "Gender": "Others",
+      "Percent": 0
+    }
+  ],
+  "PreconditionsRule": [
+    {
+      "Precondition": "Astma",
+      "Percentage": 1
+    },
+    {
+      "Precondition": "Injury",
+      "Percentage": 1
+    },
+    {
+      "Precondition": "Fracture",
+      "Percentage": 1
+    }
+  ],
+  "HabitsRule": [
+    {
+      "Habit": "Smoking",
+      "Percentage": 3
+    },
+    {
+      "Habit": "Alcohol",
+      "Percentage": -3
+    }
+  ]
+}
