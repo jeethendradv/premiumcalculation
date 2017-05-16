@@ -36,7 +36,7 @@ namespace PC.Data
         {
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["pc"].ConnectionString))
             {
-                string sql = "SELECT FirstName,LastName,Age,Gender,PreConditions,Habits FROM Member";
+                string sql = "SELECT ID,FirstName,LastName,Age,Gender,PreConditions,Habits FROM Member";
                 List<Member> members = db.Query<Member>(sql).AsList<Member>();
                 return this.convertMemberObject(members);
             }
@@ -49,6 +49,7 @@ namespace PC.Data
             {
                 MemberObject memberObject = new MemberObject
                 {
+                    ID = member.ID,
                     FirstName = member.FirstName,
                     LastName = member.LastName,
                     Age = member.Age,

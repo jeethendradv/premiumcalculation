@@ -34,6 +34,7 @@ namespace PC.Controllers
             {
                 membermodels.Add(new MemberModel
                 {
+                    Id = member.ID,
                     FirstName = member.FirstName,
                     LastName = member.LastName,
                     Age = member.Age,
